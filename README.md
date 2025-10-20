@@ -44,12 +44,19 @@ The main script for training the FiberGNN model is `FiberGNN.py`.
 python FiberGNN.py --data_path ./path/to/your/dataset --epochs 50 --batch_size 32 --lr 1e-4 # Add other relevant arguments as defined in the script/configs.py
 # --data_path: Specify the path to your training/validation data.
 # --epochs, --batch_size, --lr: Example hyperparameters. Check configs.py or the script's argument parser for all options.
+```
 
 ### Running the Online Platform (Flask Web Application)
 
 The web application allows for interactive predictions using a pre-trained model.
 
-1. Navigate to the application directory:
+1. ** Navigate to the application directory:**
+```bash
 cd Application
-2. Run the Flask application:
+```
+
+2. **Run the Flask application:**
+
+```bash
 python flask.py
+```

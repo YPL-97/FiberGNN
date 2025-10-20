@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "username": "wwj",
+        "password": "sha256$3ULqpDdrZh5Z1a92$f53ee53ccc8b24e69854173d421f952b21adc2e125e221a424c8b1fd56aca7b2"
+    },
+    {
+        "id": 2,
+        "username": "admin",
+        "password": "sha256$y9qGzBh9edvtJ3qJ$e478ca0979ea837e19ef57fabdcf1340e400a60c7844bc2cc973c5f9c0489576"
+    }
+]

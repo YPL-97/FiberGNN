@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* 视频背景 */
+        video#background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* 页面整体布局，居中内容 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;  /* 水平居中 */
+            align-items: center;      /* 垂直居中 */
+            height: 100vh;            /* 满屏高度 */
+            background-color: rgba(0, 0, 0, 0.6);  /* 背景加半透明效果 */
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* 登录表单容器 */
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);  /* 背景透明度 */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;  /* 设置最大宽度 */
+        }
+
+        /* 输入框样式 */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        /* 登录按钮样式 */
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* 注册链接样式 */
+        p {
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 视频背景 -->
+    <video id="background-video" autoplay loop muted>
+        <source src="/static/videos/1851190-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 登录表单容器 -->
+    <div class="login-container">
+        <h2>登陆</h2>
+        <form method="POST">
+            <label for="username">用户名:</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">密码:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">登陆</button>
+        </form>
+
+        <p>还没有账号? <a href="{{ url_for('register') }}">在这里注册</a></p>
+    </div>
+
+</body>
+</html>

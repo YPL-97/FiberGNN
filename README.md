@@ -50,7 +50,7 @@ python FiberGNN.py --data_path ./path/to/your/dataset --epochs 50 --batch_size 3
 
 The web application allows for interactive predictions using a pre-trained model.
 
-1. ** Navigate to the application directory:**
+1. **Navigate to the application directory:**
 ```bash
 cd Application
 ```
